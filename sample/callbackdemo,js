@@ -1,0 +1,33 @@
+
+
+const empid = () => {
+
+    setTimeout(() => {
+        var eid = [10, 20, 30, 40, 50]
+        console.log(eid);
+
+        setTimeout((empid) => {
+
+            var empd = {
+                name: "Tops",
+                email: 'tops@gmail.com'
+            }
+            console.log(`my id is ${empid} and name is ${empd.name} and email is ${empd.email}`)
+
+
+            setTimeout((name) => {
+                console.log(` name is ${name} and sal is 70000`)
+
+            }, 2000, empd.name);
+
+        }, 2000, eid[2]);
+
+
+
+    }, 2000);
+
+
+}
+
+
+empid();
